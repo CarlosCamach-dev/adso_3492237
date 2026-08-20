@@ -1,0 +1,23 @@
+nombreCliente = input("Ingrese el nombre del cliente: ")
+procesador = input("Ingrese el procesador del computador: ")
+ram = input ("Ingrese la cantidad de la memoria ram: ")
+disco = input ("Ingrese la cantidad del disco duro: ")
+procesadorValor = input("Ingrese el precio del procesador: ")
+ramValor = input ("Ingrese el precio de la memoria ram: ")
+discoValor = input("Ingrese el valor del disco duro: ")
+
+valorSuma = float(ramValor) + float(discoValor) + float(procesadorValor)
+descuento = float(valorSuma) * 0.19
+valorTotal = float(valorSuma) + float(descuento)
+
+print("Resumen de compra")
+print(" ")
+print("El cliente", nombreCliente, "ha comprado un procesador ", procesador, ", memoria ram ", ram, "y disco duro ", disco)
+print(" ")
+print("El valor total de la compra es: ", valorSuma)
+print(" ")
+print("El IVA es: ", descuento)
+print(" ")
+print("El valor total con el IVA es: ", valorTotal)
+print(" ")
+print("Gracias por la compra")
