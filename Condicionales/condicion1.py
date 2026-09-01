@@ -7,4 +7,4 @@ if horasTrabajadas > 40:
 
 pago = horasTrabajadas * valorHoras
 
-print(f"El pago que debe recibir el empleado es: {pago:.0f}")
+print(f"El pago que debe recibir el empleado es: {pago:.0f}") #Para quitar decimales se puede utilizar el :.#f cuando utilices f""
