@@ -4,11 +4,10 @@ for i in range(cant):
     num = int(input("Ingrese el número: "))
     numeros.append(num)
 
-for i in range(len(numeros)-1, -1, -1):
-    if numeros[i] != numeros[i-1]:
-        pass
-    else:
-        numeros.remove(numeros[i])
+for num in numeros:
+    if numeros.count(num) > 1:
+        numeros.remove(num)
 
 print("Números sin repeticiones:", numeros)
 
+#Count sirve para contar cuantas veces hay un elemento en una lista.

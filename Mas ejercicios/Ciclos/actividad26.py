@@ -9,7 +9,7 @@ for i in range(cant):
         negativo += 1
     elif num > 0:
         positivo += 1
-    elif num == 0:
+    else:
         cero += 1
 
 print(f"Cantidad de números negativos: {negativo}")

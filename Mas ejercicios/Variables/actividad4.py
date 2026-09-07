@@ -1,10 +1,6 @@
-notas = []
+nota = 0
 suma = 0
-for i in range(5):
-    nota = float(input(f"Ingrese la nota {i + 1}: "))
-    notas.append(nota)
-for nota in notas:
-    suma += nota
-    prom = suma / len(notas)
-
+nota = float(input("Ingrese la nota: "))
+suma += nota
+prom = suma / 1
 print(f"Promedio final: {prom}")
