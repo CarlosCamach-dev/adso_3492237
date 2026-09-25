@@ -11,14 +11,14 @@ for i in range(cant):
     gestionEstudiantes[codigo] = nombre, edad, carrera, promedio
 
 print("Mejor Estudiante: ")
-for valor in gestionEstudiantes.values():
-        promedios.append(valor[3])
+for datos in gestionEstudiantes.values():
+    promedios.append(datos[3])
 maxPromedio = max(promedios)
-for codigo, valor in gestionEstudiantes.items():
-      if valor[3] == maxPromedio:
-            print(f"""
-            Codigo: {codigo}
-            Nombre: {valor[0]}
-            Edad: {valor[1]}
-            Carrera: {valor[2]}
-            Promedio: {valor[3]}""")
+for codigo, datos in gestionEstudiantes.items():
+    if datos[3] == maxPromedio:
+        print(f"""
+        Codigo: {codigo}
+        Nombre: {datos[0]}
+        Edad: {datos[1]}
+        Carrera: {datos[2]}
+        Promedio: {datos[3]}""")
